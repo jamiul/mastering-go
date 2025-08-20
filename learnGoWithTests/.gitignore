@@ -1,0 +1,70 @@
+# -----------------------------------------------------------------------------
+# .gitignore for Go modules
+# Best-practices: ignore build artifacts, editor/IDE files, OS temp files, and
+# local secrets. Keep module files like go.mod and go.sum in source control.
+# -----------------------------------------------------------------------------
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary and common build outputs
+*.test
+*.out
+coverage.out
+*.coverprofile
+
+# If you build to a `bin/` directory, ignore it
+/bin/
+
+# Output of the go tool when using -i or when building packages
+*.o
+*.a
+
+# Dependency directories
+# If you vendor dependencies and commit them, remove this line.
+vendor/
+
+# Go workspace file (optional)
+# If you use a committed go.work for multi-module workspaces, remove this line.
+go.work
+
+# Editor/IDE directories and files
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux/temporary swap and editor backup files
+*~
+# vim swap files
+.swp
+
+# Environment files that may contain secrets
+.env
+*.env
+
+# Logs
+*.log
+
+# Misc
+# Keep these generic, but avoid ignoring files you intentionally track
+.cache/
+
+# Per-module and temporary build directories
+**/bin/
+**/tmp/
+
+# Local configuration (uncommitted user settings)
+.local-config
+
+# End of file
+
+learnGoWithTests/maps/v2/go.mod
